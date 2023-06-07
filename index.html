@@ -118,13 +118,14 @@
     }
 
     window.addEventListener('DOMContentLoaded', function() {
-      initializeAutoNumeric();
-      const agreement = localStorage.getItem("agreement");
-      if (!agreement) {
-        localStorage.setItem("agreement", "true");
-        showFirstTimeAlert();
-      }
-    });
+  initializeAutoNumeric();
+  const agreement = localStorage.getItem("agreement");
+  if (!agreement) {
+    localStorage.setItem("agreement", "true");
+    showFirstTimeAlert();
+  }
+});
+
   </script>
 </body>
 </html>
